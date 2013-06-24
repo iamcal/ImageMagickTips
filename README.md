@@ -1,12 +1,13 @@
-ImageMagickTips
-===============
+# ImageMagickTips
 
 How to actually do common things in IM
 
 
+## Working with transparent PNGs
+
 Resize an image to 128x128 or less:
 
-    convert IN.png -bordercolor transparent -resize 128x128 png32:OUT.png
+    convert IN.png -background transparent -resize 128x128 png32:OUT.png
 
 Resize an image to 128x128 exactly, adding borders as needed:
 
